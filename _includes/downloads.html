@@ -15,7 +15,7 @@
                             <th>Latest version</th>
                             <th>Mirror</th>
                         </tr>
-                        {%- for device in site.devices -%}
+                        {% for device in site.devices %}
                         <tr>
                             <td>{%- if device.codename != "Installer" -%}{{ device.codename | sort }} -
                                 {%- endif -%}{{ device.name }}</td>
@@ -30,7 +30,7 @@
                                         srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
                             </td>
                         </tr>
-                        {%- endfor -%}
+                        {% endfor %}
                     </table>
                 </div>
             </div>

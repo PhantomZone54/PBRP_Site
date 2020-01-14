@@ -9,7 +9,7 @@
                 <!--/.title-block-->
                 <div class="services-section">
                     <div class="services-list owl-carousel">
-                        {%- for member in site.data.devs -%}
+                        {% for member in site.data.devs %}
                         <div class="container-fluid item animate" data-animate="fadeInUp">
                             <div class="container-fluid service-box">
                                 <span class="service-icon">
@@ -23,7 +23,7 @@
                             <!--/.service-box-->
                         </div>
                         <!--/.item-->
-                        {%- endfor -%}
+                        {% endfor %}
                     </div>
                     <!--/.services-list-->
                 </div>

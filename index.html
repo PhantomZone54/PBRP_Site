@@ -12,9 +12,9 @@
     <link rel="icon" href="{{ 'images/PBRP_icon.png' | relative_url }}" type="image/png" sizes="32x32">
     <meta name="author" content="{{ site.author }}">
     <!-- OG Meta Tags -->
-    {%- include og-meta.html -%}
+    {% include og-meta.html %}
     <!-- Fonts and Styles -->
-    {%- include head-css.html -%}
+    {% include head-css.html %}
 </head>
 <body>
     <div id="wrapper">
@@ -27,7 +27,7 @@
             <h3>Booting Up PitchBlack Recovery Project</h3>
         </div>
         <!--HEADER START-->
-        {%- include header.html -%}
+        {% include header.html %}
         <!--HEADER END-->
         <div class="wrapper-background" style="background-image:url({{ 'images/bg.png' | relative_url }});">
             <div class="particles-section">
@@ -52,22 +52,22 @@
             </div>
             <!--/.section-->
             <!-- Include About Section -->
-            {%- include about.html -%}
+            {% include about.html %}
             <!-- Include Team Member Section -->
-            {%- include team.html -%}
+            {% include team.html %}
             <!-- Include Features Section -->
-            {%- include features.html -%}
+            {% include features.html %}
             <!-- Include Contacts Section -->
-            {%- include contact.html -%}
+            {% include contact.html %}
         </div>
         <!--/#main-->
         <!--MAIN SECTION END-->
         <!--FOOTER START-->
-        {%- include footer.html -%}
+        {% include footer.html %}
         <!--FOOTER END-->
     </div>
     <!--/#wrapper-->
     <!-- Load Javascripts at the end -->
-    {%- include foot-js.html -%}
+    {% include foot-js.html %}
 </body>
 </html>
