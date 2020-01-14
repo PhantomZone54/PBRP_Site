@@ -11,7 +11,7 @@ timezone: UTC
 url: https://rokibhasansagar.github.io/PBRP_Site
 baseurl: "https://rokibhasansagar.github.io/PBRP_Site"
 git_source: "https://github.com/rokibhasansagar/PBRP_Site"
-permalink: /:title/
+permalink: none
 
 links:
   tg_channel: "https://t.me/pbtwrp"
