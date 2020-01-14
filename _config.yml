@@ -8,9 +8,9 @@ author: fr3akyphantom
 language: en
 timezone: UTC
 
-url: https://PhantomZone54.github.io/PBRP_Site
-baseurl: "https://PhantomZone54.github.io/PBRP_Site"
-git_source: "https://github.com/PhantomZone54/PBRP_Site"
+url: https://phantomzone54.github.io/PBRP_Site
+baseurl: "https://phantomzone54.github.io/PBRP_Site"
+git_source: "https://github.com/phantomzone54/PBRP_Site"
 permalink: none
 
 links:
