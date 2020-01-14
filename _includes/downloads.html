@@ -1,0 +1,41 @@
+<div class="section fp-auto-height-responsive animated-row" data-section="downloads">
+    <!--/.downloads-->
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Downloads</h2>
+                </div>
+                <!--/.title-block-->
+                <div class="table-responsive">
+                    <table class="table table-sm table-dark table-bordered text-light table-striped">
+                        <tr>
+                            <th>Device</th>
+                            <th>Maintainer</th>
+                            <th>Latest version</th>
+                            <th>Mirror</th>
+                        </tr>
+                        {%- for device in site.devices -%}
+                        <tr>
+                            <td>{%- if device.codename != "Installer" -%}{{ device.codename | sort }} -
+                                {%- endif -%}{{ device.name }}</td>
+                            <td>{{ device.dev }}</td>
+                            <td>{{ device.ver }}</td>
+                            <td>
+                                {%- assign Installer_slug = "Utilities/Installer" -%}
+                                <a
+                                    href="{{ links.sf_release }}/files/{%- if device.codename != "Installer" -%}{{ device.codename }}{%- else -%}{{ Installer_slug }}"><img
+                                        class="img" alt="SourceForge"
+                                        src="https://a.fsdn.com/con/app/sf-download-button"
+                                        srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+                            </td>
+                        </tr>
+                        {%- endfor -%}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.section-inner-->
+</div>
+<!--/.section-->

@@ -1,0 +1,12 @@
+- text: Colors
+  src: "images/ss_homes.png"
+- text: Home
+  src: "images/ss_home.png"
+- text: Advanced
+  src: "images/ss_adv.png"
+- text: Tools
+  src: "images/ss_tools.png"
+- text: Settings
+  src: "images/ss_set.png"
+- text: Themes
+  src: "images/ss_themes.png"
